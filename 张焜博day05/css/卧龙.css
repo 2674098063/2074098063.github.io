@@ -1,0 +1,134 @@
+/* content */
+
+.content {
+    width: 960px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* background-color: pink */
+}
+
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+.header h1 {
+    width: 244px;
+    height: 20px;
+    background-image: url(../images/卧龙logo_03.png);
+    background-repeat: no-repeat;
+    float: left;
+    text-indent: -9999999px;
+    margin-top: 42px;
+}
+
+.header input {
+    float: right;
+    width: 227px;
+    height: 28px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 8px;
+    margin-top: 39px;
+    color: #ccc;
+    font: 10px;
+    padding-left: 9px;
+    text-transform: uppercase;
+}
+
+
+/* nav */
+
+.nav {
+    width: 100%;
+    height: 56px;
+    background-color: #2f2f2f;
+}
+
+.nav li {
+    float: left;
+    width: 120px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 56px;
+}
+
+.nav a {
+    color: white;
+    line-height: 56px;
+    display: block;
+}
+
+.nav li:nth-child(8) {
+    border-right: 0;
+}
+
+
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 466px;
+    background-image: url(../images/卧龙banner_03.png);
+    background-position: center center;
+}
+
+
+/* main1 */
+
+.main1 {
+    width: 100%;
+    height: 240px;
+}
+
+.main1 .main1-lfet {
+    width: 480px;
+    height: 100%;
+    float: left;
+}
+
+.main1 h2 {
+    margin-top: 38px;
+    margin-left: 26px;
+}
+
+.main1-center {
+    width: 240px;
+    height: 100%;
+    float: left;
+}
+
+.main1-right {
+    width: 240px;
+    height: 100%;
+    float: left;
+}
+
+
+/* main2 */
+
+.main2 {
+    width: 100%;
+    height: 306px;
+}
+
+
+/* main3 */
+
+.main3 {
+    width: 100%;
+    height: 250px;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 81px;
+}
