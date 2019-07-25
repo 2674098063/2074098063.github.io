@@ -1,0 +1,21 @@
+.d {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    position: relative;
+}
+
+span {
+    color: #778899;
+}
+
+.s1 {
+    top: 28%;
+    left: 130px;
+    position: absolute;
+}
+
+.s2 {
+    bottom: 5%;
+    position: absolute;
+}

@@ -1,0 +1,544 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #index {
+        width: 100%;
+        /* height: 5800px;
+        background-color: blue; */
+    }
+    /* header */
+    
+    .nav {
+        width: 100%;
+        height: 82px;
+        background-color: white;
+    }
+    
+    h1 {
+        height: 68px;
+        text-indent: -99999px;
+        background-image: url(../images/石宇网络/logo.png);
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        padding-top: 7px;
+        float: left;
+        width: 256px;
+    }
+    
+    .nav ul {
+        float: right;
+        margin-right: 82px;
+        margin-top: 15px;
+        height: 45px;
+        width: 890px;
+    }
+    
+    .nav li {
+        float: left;
+        margin-right: 40px;
+        font-size: 18px;
+        line-height: 45px;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    .nav li a {
+        color: #000;
+        display: block;
+        line-height: 45px;
+    }
+    
+    .nav li:hover {
+        border-bottom: 2px solid red;
+    }
+    
+    .nav a:hover {
+        color: red;
+    }
+    /* banner */
+    
+    .banner {
+        width: 100%;
+        height: 910px;
+        background-color: azure;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 700px;
+        display: block;
+        line-height: 700px;
+    }
+    
+    .banner-i {
+        background-color: #1b252e;
+        width: 100%;
+        height: 210px;
+        overflow: hidden;
+    }
+    
+    .banner-i h2 {
+        float: left;
+        margin-left: 72px;
+        color: #fff;
+        width: 760px;
+    }
+    
+    .banner-i p {
+        float: left;
+        margin-left: 72px;
+        color: #fff;
+        width: 760px;
+    }
+    
+    .banner-i h2 {
+        font-size: 22px;
+        line-height: 22px;
+        ;
+        margin-top: 56px;
+        margin-bottom: 17px;
+    }
+    
+    .banner-i p {
+        line-height: 22px;
+    }
+    
+    .banner-i a {
+        float: right;
+        display: block;
+        margin-right: 320px;
+        background-color: white;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+        width: 160px;
+        color: #000;
+        border-radius: 50px;
+    }
+    /* service */
+    
+    .service {
+        width: 100%;
+        height: 600px;
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    .service h2 {
+        text-align: center;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 800;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+    
+    .s-box {
+        width: 1180px;
+        height: 300px;
+        margin: auto;
+        box-sizing: border-box;
+        border-top: 1px solid #ccc;
+    }
+    
+    .s-bbox {
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        float: left;
+    }
+    
+    .s-bbox img {
+        margin: 60px 0;
+    }
+    
+    .s-bbox h3 {
+        font-size: 24px;
+    }
+    
+    .s-bbox a {
+        font-size: 12px;
+        color: #ccc;
+    }
+    /* fps */
+    
+    .fp {
+        height: 716px;
+        width: 100%;
+        background-color: #ebebeb;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .fp h2 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-top: 70px;
+    }
+    
+    .fp p {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .fps {
+        width: 1220px;
+        height: 464px;
+        /* background-color: red; */
+        margin: auto;
+        margin-top: 35px;
+    }
+    
+    .fpsi {
+        width: 273px;
+        height: 212px;
+        background-color: white;
+        margin: 10px 15px;
+        float: left;
+    }
+    
+    .fpsi img {
+        margin-top: 8px;
+    }
+    
+    .fpsi p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 15px;
+    }
+    /* brand */
+    
+    .brand {
+        height: 428px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/石宇网络/brand-bg.jpg);
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    
+    .brand h2 {
+        color: red;
+        font-size: 40px;
+        float: left;
+        margin-top: 180px;
+    }
+    
+    .brand h2:nth-child(1) {
+        margin-left: 20%;
+    }
+    
+    .brand h2:nth-child(2) {
+        color: white;
+        width: 45%;
+        font-size: 34px;
+        text-align: center;
+    }
+    /* ibox */
+    
+    .ibox {
+        height: 600px;
+        width: 100%;
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    .ibox h2 {
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: 78px;
+    }
+    
+    .ibox p {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 20px;
+        text-align: center;
+        color: #999;
+    }
+    /* .ibox1 {} */
+    
+    .ibox1-a {
+        /* background-color: pink; */
+        width: 316px;
+        height: 400px;
+        margin: 30px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .ibox1-a img {
+        margin: 50px 100px;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 34px;
+        color: red;
+    }
+    /* about */
+    
+    .about {
+        height: 536px;
+        background-image: url(../images/石宇网络/about-bg.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .about1 {
+        width: 50%;
+        height: 100%;
+        float: right;
+        /* background-color: #ccc; */
+    }
+    
+    .about1 h2 {
+        font-size: 38px;
+        line-height: 32px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 20%;
+        margin-bottom: 34px;
+    }
+    
+    .about1 p {
+        line-height: 24px;
+        margin-left: 28%;
+        color: #999;
+    }
+    
+    .about1 a {
+        display: block;
+        width: 158px;
+        height: 51px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        color: #000;
+        text-align: center;
+        line-height: 49px;
+        margin: 10% 28%;
+    }
+    /* wx */
+    
+    .wx {
+        background-color: white;
+        height: 700px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .wx h2 {
+        font-size: 34px;
+        line-height: 34px;
+        margin-top: 90px;
+        text-align: center;
+    }
+    
+    .wx span {
+        margin-top: 40px;
+        display: block;
+        text-align: center;
+        color: #ccc;
+    }
+    
+    .wx p {
+        flex-shrink: 24px;
+        line-height: 24px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .lx {
+        width: 100%;
+        /* background-color: beige; */
+        margin-top: 75px;
+        height: 100px;
+    }
+    
+    .q1 {
+        width: 350px;
+        height: 100px;
+        /* background-color: red; */
+        margin: 0 70px 0 70px;
+        float: left;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .q1 img {
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 30px 20px 0 80px;
+    }
+    
+    .q1 p {
+        float: left;
+        width: 40%;
+        margin-top: 10px;
+        line-height: 16px;
+    }
+    
+    .wx1 {
+        width: 409px;
+        height: 170px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .wx1-a1 {
+        width: 120px;
+        height: 85px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 0 solid #000;
+        float: left;
+        box-sizing: border-box;
+        margin-top: 85px;
+    }
+    
+    .wx1-a {
+        width: 119px;
+        height: 85px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        float: left;
+        box-sizing: border-box;
+        margin-top: 85px;
+    }
+    
+    .wx1-b img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .wx1-b {
+        width: 170px;
+        height: 170px;
+        float: left;
+    }
+    /* seo */
+    
+    .seo {
+        height: 515px;
+        width: 100%;
+        background-color: #ccc;
+    }
+    
+    .seo1 {
+        width: 273px;
+        height: 284px;
+        float: left;
+        margin: 100px 10px;
+        background-color: white;
+    }
+    
+    .seo div:nth-child(1) {
+        margin-left: 150px;
+    }
+    
+    .seo1 img {
+        width: 100%;
+    }
+    
+    .seo1 h3 {
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+        margin-top: 30px;
+    }
+    
+    .seo1 p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: 20px;
+        width: 85%;
+    }
+    /* foot */
+    
+    .foot {
+        width: 100%;
+        /* height: 265px; */
+        border-top: 2px solid red;
+        box-sizing: border-box;
+        background: #1b252e;
+    }
+    
+    .foot1 {
+        width: 76%;
+        height: 133px;
+        margin: auto;
+    }
+    
+    .f1 {
+        margin-top: 70px;
+        float: left;
+        margin-right: 100px;
+    }
+    
+    .f1 span {
+        color: #ccc;
+    }
+    
+    .f1 img {
+        vertical-align: middle;
+    }
+    
+    .f2 {
+        width: 76%;
+        height: 160px;
+        border-top: 1px solid grey;
+        margin: auto;
+    }
+    
+    .f2 a {
+        color: #fff;
+    }
+    
+    .ll {
+        width: 100%;
+        float: left;
+    }
+    
+    .f2 li {
+        float: left;
+        color: #fff;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    
+    .f2 li:nth-child(1) {
+        margin-left: 25%;
+    }
+    
+    .pp {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .pp span {
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
