@@ -19,6 +19,63 @@
     margin-top: 22px;
 }
 
+.fixed {
+    width: 48px;
+    /* height: 144px; */
+    position: fixed;
+    /* overflow: hidden; */
+    right: 0;
+    bottom: 50px;
+}
+
+.fixed1 {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.fixed1 img {
+    position: relative;
+}
+
+.fixedc img {
+    top: -48px;
+}
+
+.fixedb .fix1 {
+    top: -96px;
+}
+
+.fixedtt .fix1 {
+    top: -144px;
+}
+
+.fixed1:hover .fix1 {
+    left: -48px;
+}
+
+.zxkf {}
+
+.wxt {
+    width: 120px;
+    height: 131px;
+    position: fixed;
+    right: 55px;
+    bottom: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.wxt img {
+    position: absolute;
+    right: -48px;
+    bottom: -40px;
+}
+
+.fixedb:hover .wxt {
+    display: block;
+}
+
 
 /* 
     header

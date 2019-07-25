@@ -21,7 +21,7 @@
 
 .fixed {
     width: 48px;
-    height: 144px;
+    /* height: 144px; */
     position: fixed;
     /* overflow: hidden; */
     right: 0;
@@ -34,16 +34,46 @@
     overflow: hidden;
 }
 
-.fixed1:hover img {
-    margin-left: -48px;
+.fixed1 img {
+    position: relative;
 }
 
-.fixedc {
-    margin-top: 48px;
+.fixedc img {
+    top: -48px;
 }
 
-.fixedc:hover img {
-    margin-left: -48px;
+.fixedb .fix1 {
+    top: -96px;
+}
+
+.fixedtt .fix1 {
+    top: -144px;
+}
+
+.fixed1:hover .fix1 {
+    left: -48px;
+}
+
+.zxkf {}
+
+.wxt {
+    width: 120px;
+    height: 131px;
+    position: fixed;
+    right: 55px;
+    bottom: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.wxt img {
+    position: absolute;
+    right: -48px;
+    bottom: -40px;
+}
+
+.fixedb:hover .wxt {
+    display: block;
 }
 
 
