@@ -1,0 +1,232 @@
+html,
+body {
+    height: 100%;
+}
+
+#nyb {
+    height: 100%;
+    border-bottom: 1px solid #265fa6;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/* header */
+
+#nyb .header {
+    height: 90px;
+    box-sizing: border-box;
+    position: relative;
+    background: url(../images/logo.png) no-repeat 30px 30px, #7ab5e9;
+    border-bottom: 3px double #2a5ca3;
+}
+
+#nyb .header .head {
+    text-indent: -999999px;
+}
+
+
+/* logo */
+
+#nyb .header h1 {
+    line-height: 87px;
+    color: white;
+    margin-left: 30px;
+}
+
+
+/* login */
+
+#nyb .header .login {
+    width: 262px;
+    height: 21px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background: url(../images/head-l.jpg) no-repeat 0 0, url(../images/head-r.jpg) no-repeat 255px 0, white;
+}
+
+#nyb .header .login li {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #6d6d6d;
+}
+
+
+/* header-nav */
+
+#nyb .header .header-nav {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#nyb .header .header-nav li div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    margin: auto;
+}
+
+#nyb .header .header-nav li {
+    width: 95px;
+    height: 56px;
+    padding: 0 16px;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#nyb .header .header-nav li a {
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+#nyb .header .header-nav li:hover {
+    background-image: url(../images/libj.png);
+}
+
+#nyb .header .header-nav li:nth-child(1):hover img {
+    content: url("../images/n1_hover.png");
+}
+
+#nyb .header .header-nav li:nth-child(2):hover img {
+    content: url("../images/n2_hover.png");
+}
+
+#nyb .header .header-nav li:nth-child(3):hover img {
+    content: url("../images/n3_hover.png");
+}
+
+#nyb .header .header-nav li:nth-child(4):hover img {
+    content: url("../images/n4_hover.png");
+}
+
+#nyb .header .header-nav li:nth-child(5):hover img {
+    content: url("../images/n5_hover.png");
+}
+
+#nyb .header .header-nav li:nth-child(6):hover img {
+    content: url("../images/n6_hover.png");
+}
+
+#nyb .header .header-nav li:nth-child(7):hover img {
+    content: url("../images/n7_hover.png");
+}
+
+
+/* content */
+
+#nyb .content {
+    height: calc(100% - 90px);
+    background-color: pink;
+}
+
+
+/*  left*/
+
+#nyb .content .content-left {
+    width: 200px;
+    height: 100%;
+    background-color: #417ec8;
+}
+
+#nyb .content .content-left .content-left-t {
+    height: 27px;
+    font-size: 12;
+    background-image: url(../images/e_01.jpg);
+}
+
+#nyb .content .content-left .content-left-b .clb1 {
+    width: 196px;
+    line-height: 32px;
+    border: 1px solid #0b65b1;
+    border-left: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content-left-b .clb1:hover {
+    background: url(../images/left_hover.jpg) no-repeat 0 0;
+}
+
+#nyb .content .content-left .content-left-b li:hover div {
+    display: block;
+}
+
+#nyb .content .content-left .content-left-b li div {
+    display: none;
+}
+
+#nyb .content .content-left .content-left-b li div li {
+    border: none;
+    list-style-image: url(../images/jiao.png);
+    list-style-position: inside;
+}
+
+
+/* right */
+
+#nyb .content .content-right {
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: #fff;
+    overflow: scroll;
+}
+
+.cr1 {
+    margin-left: 17px;
+    border-bottom: 1px solid #ccc;
+    line-height: 24px;
+}
+
+.cr2 {
+    margin-left: 20px;
+    line-height: 50px;
+}
+
+.cr21 {
+    margin-right: 30px;
+}
+
+.cr3 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cr3 form {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cr3 form table {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}

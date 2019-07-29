@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/day10.css">
+</head>
+
+<body>
+    <div id="nyb">
+        <div class="header">
+            <div class="head">
+                <h1 class="f24">农业部观测站物联网数据采集与管理系统</h1>
+            </div>
+            <div class="login">
+                <ul class="clearfix">
+                    <li class="fl">
+                        <img src="../images/dl.png" alt=""><span class="f12">欢迎您，admin！</span>
+                    </li>
+                    <li class="fl"><img src="../images/tc.png" alt=""><a class="f12" href="">退出</a></li>
+                </ul>
+            </div>
+            <div class="header-nav">
+                <ul class="clearfix">
+                    <li>
+                        <div><img src="../images/n1.png" alt=""></div>
+                        <a href="#shujucaiji">数据采集</a>
+
+                    </li>
+                    <li>
+                        <div><img src="../images/n2.png" alt=""></div>
+                        <a href="#shujucaiji">数据展示</a>
+                    </li>
+                    <li>
+                        <div><img src="../images/n3.png" alt=""></div>
+                        <a href="#shujucaiji">实验管理</a>
+                    </li>
+                    <li>
+                        <div><img src="../images/n4.png" alt=""></div>
+                        <a href="#shujucaiji">数据同步</a>
+                    </li>
+                    <li>
+                        <div><img src="../images/n5.png" alt=""></div>
+                        <a href="#shujucaiji">设备管理</a>
+                    </li>
+                    <li>
+                        <div><img src="../images/n6.png" alt=""></div>
+                        <a href="#shujucaiji">数据分析</a>
+                    </li>
+                    <li>
+                        <div><img src="../images/n7.png" alt=""></div>
+                        <a href="#shujucaiji">系统管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content clearfix">
+            <div class="content-left fl">
+                <div class="content-left-t">
+
+                </div>
+                <div class="content-left-b">
+                    <ul>
+                        <li class="clb1">
+                            <img src="../images/left_01.png" alt="">
+                            <span>设备信息</span>
+                            <div class="clbd">
+                                <ul>
+                                    <li>所有设备</li>
+                                    <li>正常设备</li>
+                                    <li>异常设备</li>
+                                    <li>共享设备</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="clb1">
+                            <img src="../images/left_02.png" alt="">
+                            <span>设备接口</span>
+                            <div class="clbd">
+                                <ul>
+                                    <li>所有设备</li>
+                                    <li>正常设备</li>
+                                    <li>异常设备</li>
+                                    <li>共享设备</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="clb1">
+                            <img src="../images/left_03.png" alt="">
+                            <span>集成设备</span>
+                            <div class="clbd">
+                                <ul>
+                                    <li>所有设备</li>
+                                    <li>正常设备</li>
+                                    <li>异常设备</li>
+                                    <li>共享设备</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right fl clearfix">
+                <div class="cr1">
+                    <img src="../images/home.jpg" alt="">
+                    <span>当前位置>>设备管理>>设备信息>>正常设备</span>
+                </div>
+                <div class="cr2 clearfix">
+                    <div class="fl cr21"><img src="../images/left_14.png" alt="">
+                        <span>搜索</span>
+                    </div>
+                    <form class="fl clearfix " action="">
+
+                        <label for="name">设备名称</label>
+                        <input type="name">
+                        <label for="tp">设备类型</label>
+                        <select name="" id="tp">
+                            <option value="" default hidden>-请选择-</option>
+                            <option value="">下拉选项1</option>
+                            <option value="">下拉选项2</option>
+                        </select>
+                        <input type="button" value="查询">
+                    </form>
+                </div>
+                <div class="cr3">
+                    <form action="">
+                        <table>
+                            <caption class="clearfix">
+                                <div class="cr32 fr">
+                                    <img src="../images/sc.jpg" alt="">
+                                </div>
+                                <div class="cr31 fr">
+                                    <img src="../images/tj.jpg" alt="">
+                                </div>
+
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox">全选
+                                    </th>
+                                    <th>设备类型</th>
+                                    <th>设备名称</th>
+                                    <th>设备编号</th>
+                                    <th>创建日期</th>
+                                    <th>设备状态</th>
+                                    <th>是否共享</th>
+                                    <th>修改</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> <input type="checkbox" name="" id=""></td>
+                                    <td>网络视顺摄像头</td>
+                                    <td>Camera001</td>
+                                    <td>2131313</td>
+                                    <td>2015/04/25</td>
+                                    <td><img src="../images/device-1.png" alt=""></td>
+                                    <td><img src="../images/share-1.png" alt=""></td>
+                                    <td><img src="../images/xg.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                        <td> <input type="checkbox" name="" id=""></td>
+                                        <td>网络视顺摄像头</td>
+                                        <td>Camera001</td>
+                                        <td>2131313</td>
+                                        <td>2015/04/25</td>
+                                        <td><img src="../images/device-1.png" alt=""></td>
+                                        <td><img src="../images/share-1.png" alt=""></td>
+                                        <td><img src="../images/xg.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                            <td> <input type="checkbox" name="" id=""></td>
+                                            <td>网络视顺摄像头</td>
+                                            <td>Camera001</td>
+                                            <td>2131313</td>
+                                            <td>2015/04/25</td>
+                                            <td><img src="../images/device-1.png" alt=""></td>
+                                            <td><img src="../images/share-1.png" alt=""></td>
+                                            <td><img src="../images/xg.png" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                                <td> <input type="checkbox" name="" id=""></td>
+                                                <td>网络视顺摄像头</td>
+                                                <td>Camera001</td>
+                                                <td>2131313</td>
+                                                <td>2015/04/25</td>
+                                                <td><img src="../images/device-1.png" alt=""></td>
+                                                <td><img src="../images/share-1.png" alt=""></td>
+                                                <td><img src="../images/xg.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                    <td> <input type="checkbox" name="" id=""></td>
+                                                    <td>网络视顺摄像头</td>
+                                                    <td>Camera001</td>
+                                                    <td>2131313</td>
+                                                    <td>2015/04/25</td>
+                                                    <td><img src="../images/device-1.png" alt=""></td>
+                                                    <td><img src="../images/share-1.png" alt=""></td>
+                                                    <td><img src="../images/xg.png" alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                        <td> <input type="checkbox" name="" id=""></td>
+                                                        <td>网络视顺摄像头</td>
+                                                        <td>Camera001</td>
+                                                        <td>2131313</td>
+                                                        <td>2015/04/25</td>
+                                                        <td><img src="../images/device-1.png" alt=""></td>
+                                                        <td><img src="../images/share-1.png" alt=""></td>
+                                                        <td><img src="../images/xg.png" alt=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td> <input type="checkbox" name="" id=""></td>
+                                                            <td>网络视顺摄像头</td>
+                                                            <td>Camera001</td>
+                                                            <td>2131313</td>
+                                                            <td>2015/04/25</td>
+                                                            <td><img src="../images/device-1.png" alt=""></td>
+                                                            <td><img src="../images/share-1.png" alt=""></td>
+                                                            <td><img src="../images/xg.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td> <input type="checkbox" name="" id=""></td>
+                                                                <td>网络视顺摄像头</td>
+                                                                <td>Camera001</td>
+                                                                <td>2131313</td>
+                                                                <td>2015/04/25</td>
+                                                                <td><img src="../images/device-1.png" alt=""></td>
+                                                                <td><img src="../images/share-1.png" alt=""></td>
+                                                                <td><img src="../images/xg.png" alt=""></td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td> <input type="checkbox" name="" id=""></td>
+                                                                    <td>网络视顺摄像头</td>
+                                                                    <td>Camera001</td>
+                                                                    <td>2131313</td>
+                                                                    <td>2015/04/25</td>
+                                                                    <td><img src="../images/device-1.png" alt=""></td>
+                                                                    <td><img src="../images/share-1.png" alt=""></td>
+                                                                    <td><img src="../images/xg.png" alt=""></td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td> <input type="checkbox" name="" id=""></td>
+                                                                        <td>网络视顺摄像头</td>
+                                                                        <td>Camera001</td>
+                                                                        <td>2131313</td>
+                                                                        <td>2015/04/25</td>
+                                                                        <td><img src="../images/device-1.png" alt=""></td>
+                                                                        <td><img src="../images/share-1.png" alt=""></td>
+                                                                        <td><img src="../images/xg.png" alt=""></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <td> <input type="checkbox" name="" id=""></td>
+                                                                            <td>网络视顺摄像头</td>
+                                                                            <td>Camera001</td>
+                                                                            <td>2131313</td>
+                                                                            <td>2015/04/25</td>
+                                                                            <td><img src="../images/device-1.png" alt=""></td>
+                                                                            <td><img src="../images/share-1.png" alt=""></td>
+                                                                            <td><img src="../images/xg.png" alt=""></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td> <input type="checkbox" name="" id=""></td>
+                                                                                <td>网络视顺摄像头</td>
+                                                                                <td>Camera001</td>
+                                                                                <td>2131313</td>
+                                                                                <td>2015/04/25</td>
+                                                                                <td><img src="../images/device-1.png" alt=""></td>
+                                                                                <td><img src="../images/share-1.png" alt=""></td>
+                                                                                <td><img src="../images/xg.png" alt=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                    <td> <input type="checkbox" name="" id=""></td>
+                                                                                    <td>网络视顺摄像头</td>
+                                                                                    <td>Camera001</td>
+                                                                                    <td>2131313</td>
+                                                                                    <td>2015/04/25</td>
+                                                                                    <td><img src="../images/device-1.png" alt=""></td>
+                                                                                    <td><img src="../images/share-1.png" alt=""></td>
+                                                                                    <td><img src="../images/xg.png" alt=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td> <input type="checkbox" name="" id=""></td>
+                                                                                        <td>网络视顺摄像头</td>
+                                                                                        <td>Camera001</td>
+                                                                                        <td>2131313</td>
+                                                                                        <td>2015/04/25</td>
+                                                                                        <td><img src="../images/device-1.png" alt=""></td>
+                                                                                        <td><img src="../images/share-1.png" alt=""></td>
+                                                                                        <td><img src="../images/xg.png" alt=""></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                            <td> <input type="checkbox" name="" id=""></td>
+                                                                                            <td>网络视顺摄像头</td>
+                                                                                            <td>Camera001</td>
+                                                                                            <td>2131313</td>
+                                                                                            <td>2015/04/25</td>
+                                                                                            <td><img src="../images/device-1.png" alt=""></td>
+                                                                                            <td><img src="../images/share-1.png" alt=""></td>
+                                                                                            <td><img src="../images/xg.png" alt=""></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                                <td> <input type="checkbox" name="" id=""></td>
+                                                                                                <td>网络视顺摄像头</td>
+                                                                                                <td>Camera001</td>
+                                                                                                <td>2131313</td>
+                                                                                                <td>2015/04/25</td>
+                                                                                                <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                <td><img src="../images/xg.png" alt=""></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                    <td> <input type="checkbox" name="" id=""></td>
+                                                                                                    <td>网络视顺摄像头</td>
+                                                                                                    <td>Camera001</td>
+                                                                                                    <td>2131313</td>
+                                                                                                    <td>2015/04/25</td>
+                                                                                                    <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                    <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                    <td><img src="../images/xg.png" alt=""></td>
+                                                                                                </tr><tr>
+                                                                                                        <td> <input type="checkbox" name="" id=""></td>
+                                                                                                        <td>网络视顺摄像头</td>
+                                                                                                        <td>Camera001</td>
+                                                                                                        <td>2131313</td>
+                                                                                                        <td>2015/04/25</td>
+                                                                                                        <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                        <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                        <td><img src="../images/xg.png" alt=""></td>
+                                                                                                    </tr><tr>
+                                                                                                            <td> <input type="checkbox" name="" id=""></td>
+                                                                                                            <td>网络视顺摄像头</td>
+                                                                                                            <td>Camera001</td>
+                                                                                                            <td>2131313</td>
+                                                                                                            <td>2015/04/25</td>
+                                                                                                            <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                            <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                            <td><img src="../images/xg.png" alt=""></td>
+                                                                                                        </tr><tr>
+                                                                                                                <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                <td>网络视顺摄像头</td>
+                                                                                                                <td>Camera001</td>
+                                                                                                                <td>2131313</td>
+                                                                                                                <td>2015/04/25</td>
+                                                                                                                <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                <td><img src="../images/xg.png" alt=""></td>
+                                                                                                            </tr><tr>
+                                                                                                                    <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                    <td>网络视顺摄像头</td>
+                                                                                                                    <td>Camera001</td>
+                                                                                                                    <td>2131313</td>
+                                                                                                                    <td>2015/04/25</td>
+                                                                                                                    <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                    <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                    <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                </tr><tr>
+                                                                                                                        <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                        <td>网络视顺摄像头</td>
+                                                                                                                        <td>Camera001</td>
+                                                                                                                        <td>2131313</td>
+                                                                                                                        <td>2015/04/25</td>
+                                                                                                                        <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                        <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                        <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                    </tr><tr>
+                                                                                                                            <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                            <td>网络视顺摄像头</td>
+                                                                                                                            <td>Camera001</td>
+                                                                                                                            <td>2131313</td>
+                                                                                                                            <td>2015/04/25</td>
+                                                                                                                            <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                            <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                            <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                        </tr><tr>
+                                                                                                                                <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                                <td>网络视顺摄像头</td>
+                                                                                                                                <td>Camera001</td>
+                                                                                                                                <td>2131313</td>
+                                                                                                                                <td>2015/04/25</td>
+                                                                                                                                <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                                <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                                <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                            </tr><tr>
+                                                                                                                                    <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                                    <td>网络视顺摄像头</td>
+                                                                                                                                    <td>Camera001</td>
+                                                                                                                                    <td>2131313</td>
+                                                                                                                                    <td>2015/04/25</td>
+                                                                                                                                    <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                                    <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                                    <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                                </tr><tr>
+                                                                                                                                        <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                                        <td>网络视顺摄像头</td>
+                                                                                                                                        <td>Camera001</td>
+                                                                                                                                        <td>2131313</td>
+                                                                                                                                        <td>2015/04/25</td>
+                                                                                                                                        <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                                        <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                                        <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                                    </tr><tr>
+                                                                                                                                            <td> <input type="checkbox" name="" id=""></td>
+                                                                                                                                            <td>网络视顺摄像头</td>
+                                                                                                                                            <td>Camera001</td>
+                                                                                                                                            <td>2131313</td>
+                                                                                                                                            <td>2015/04/25</td>
+                                                                                                                                            <td><img src="../images/device-1.png" alt=""></td>
+                                                                                                                                            <td><img src="../images/share-1.png" alt=""></td>
+                                                                                                                                            <td><img src="../images/xg.png" alt=""></td>
+                                                                                                                                        </tr>
+                            </tbody>
+                            <tfoot class="clearfix">
+                                <p class="fl"><span>共10条数据，当前有10条</span></p>
+                                <p class="fr"><span>首页</span><input type="button" value="1"><input type="button" value="2"><span>尾页</span></p>
+                            </tfoot>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
