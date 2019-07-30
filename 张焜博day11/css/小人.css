@@ -1,0 +1,80 @@
+.android {
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    background-color: #ccc;
+    position: relative;
+}
+
+.header {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-color: #58bc58;
+}
+
+.header div {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.header .left-eye {
+    left: 60px;
+    top: 50px;
+}
+
+.header .right-eye {
+    right: 60px;
+    top: 50px;
+}
+
+.body {
+    width: 200px;
+    height: 230px;
+    background-color: #58bc58;
+    position: relative;
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 0 18px 18px;
+}
+
+.body div {
+    width: 30px;
+    height: 180px;
+    background-color: #58bc58;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+}
+
+.body .left-hand {
+    left: -40px;
+}
+
+.body .right-hand {
+    right: -40px;
+}
+
+.body .left-leg {
+    height: 80px;
+    top: 100%;
+    border-radius: 0 0 15px 15px;
+    left: 40px;
+}
+
+.body .right-leg {
+    height: 80px;
+    top: 100%;
+    border-radius: 0 0 15px 15px;
+    right: 40px;
+}
