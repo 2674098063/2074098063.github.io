@@ -1,0 +1,323 @@
+html,
+body {
+    height: 100%;
+}
+
+#soushi {
+    width: 100%;
+}
+
+.content {
+    width: 1230px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/* top */
+
+.top {
+    width: 100%;
+    /* height: 32px; */
+    background-color: #f2f2f2;
+}
+
+.top .content {
+    background: url(../images/a@2x.png) no-repeat 0 10px;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.top .content .top-left {
+    width: 50%;
+}
+
+.top .content .top-right {
+    width: 50%;
+}
+
+.top .content .top-left span {
+    margin-left: 30px;
+}
+
+.top .content a {
+    margin-left: 48px;
+    color: #000;
+}
+
+.top .content a:hover {
+    color: #ff6000;
+}
+
+.top .content .top-right .top-r-sc {
+    width: 85px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-left: 200px;
+}
+
+.top .content .top-right .top-r-sc a {
+    margin-left: 0;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.top .content .top-right .top-r-sc span {
+    display: block;
+    float: right;
+    top: 10px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: #000;
+}
+
+.top .content .top-right .top-r-sc .top-r-scbox {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 200%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+}
+
+.top .content .top-right .top-r-sc:hover {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.top .content .top-right .top-r-sc:hover .top-r-scbox {
+    display: block;
+}
+
+.top .content .top-right>span {
+    float: left;
+}
+
+
+/* head */
+
+.head .head-top {
+    position: relative;
+}
+
+.head .head-top h2 {
+    width: 188px;
+    height: 74px;
+    text-indent: -99999px;
+    float: left;
+    /* margin-top: 35px; */
+    position: relative;
+    background: url(../images/logo@2x.png) no-repeat 0 0;
+}
+
+.head .head-top .ht-ss {
+    margin-top: 48px;
+    margin-left: 450px;
+    position: relative;
+}
+
+.head .head-top .ht-ss .ht-ss-t {
+    width: 36px;
+    height: 36px;
+    background: url(../images/fdj@2x.png) no-repeat 0 0;
+    background-size: cover;
+    background-position: center center;
+    top: 3px;
+    left: 6px;
+    position: absolute;
+}
+
+.head .head-top .ht-ss>div {
+    float: left;
+}
+
+.head .head-top .ht-ss input {
+    width: 490px;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1px solid #ff6000;
+    padding-left: 44px;
+}
+
+.head .head-top .ht-ss .ht-ss-bt {
+    background-color: #ff6000;
+    position: absolute;
+    top: 0;
+    left: 490px;
+    height: 38px;
+    padding: 0 35px;
+    line-height: 38px;
+    box-sizing: border-box;
+}
+
+.head .head-top .ht-ss .ht-ss-bt span {
+    color: #fff;
+}
+
+.head .head-top .ht-ss .ht-ss-tt {
+    position: absolute;
+    top: 50px;
+}
+
+.head .head-top .ht-ss .ht-ss-tt span {
+    padding-right: 5px;
+    border-right: 1px solid #999;
+    color: #999;
+}
+
+.head .head-top .ht-ss .ht-ss-tt a {
+    color: #999;
+    padding-left: 5px;
+    margin-right: 5px;
+}
+
+.head .head-bottom {
+    margin-top: 38px;
+}
+
+.head .head-bottom h2 {
+    width: 200px;
+    height: 40px;
+    float: left;
+    background: url(../images/sort_icon@2x.png) no-repeat 15px 13px, #0095d5;
+}
+
+.head .head-bottom li {
+    float: left;
+    margin-left: 80px;
+}
+
+.head .head-bottom li a {
+    color: #000;
+}
+
+
+/* banner */
+
+.banner {
+    background-color: #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.banner .nav {
+    width: 200px;
+    height: 410px;
+    float: left;
+    background-color: #fff;
+    padding: 20px 0 0 10px;
+    box-sizing: border-box;
+}
+
+.banner .nav dl {
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.banner .nav>dl>dt {
+    background: url(../images/icon3.png) no-repeat 0 0;
+    padding-left: 30px;
+    width: 100%;
+    color: #999;
+}
+
+.banner .nav dl dd {
+    float: left;
+    width: 35%;
+    margin-left: 15px;
+    line-height: 32px;
+}
+
+.banner .nav .nav2 {
+    width: 500px;
+    height: 410px;
+    display: none;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: -20px;
+    left: 100%;
+}
+
+.banner .nav dl:hover .nav2 {
+    display: block;
+}
+
+.banner .nav dl:hover .nav2 dd {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.banner .nav dl:hover .nav2 dd div {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #000;
+    float: left;
+    vertical-align: middle;
+}
+
+.banner .nav dl:hover .nav2 dd span {
+    /* vertical-align: middle; */
+    display: block;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+}
+
+.banner .banner-c {
+    width: 800px;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    background: url(../images/banner.jpg) no-repeat center center;
+}
+
+.banner .login {
+    font-size: 12px;
+}
+
+.banner .login .login-t {
+    float: left;
+    position: relative;
+    width: 210px;
+    height: 49%;
+}
+
+.login .login-t .login-i {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    background: url(../images/head@2x.png) no-repeat 0 0;
+}
+
+.login .login-b {
+    height: 49%;
+    width: 100%;
+}
