@@ -1,0 +1,333 @@
+.content {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.box .content>h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+
+/* 结婚流程 */
+
+.box .jhlc {
+    height: 310px;
+    background: url(../images/bg.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.box .jhlc h2 {
+    margin-top: 56px;
+}
+
+.box .jhlc .lc {
+    width: 100%;
+    height: 248px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 137px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 13px 0 #fbfbfb;
+}
+
+.box .jhlc .lc a {
+    width: 100px;
+    height: 160px;
+    cursor: pointer;
+    color: black;
+    /* background-color: red; */
+}
+
+.box .jhlc .lc a span {
+    width: 100px;
+    height: 88px;
+    display: block;
+    position: relative;
+}
+
+.box .jhlc .lc a span i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 800% 200%;
+}
+
+.box .jhlc .lc a:nth-child(2) span i {
+    background-position-x: -36px;
+}
+
+.box .jhlc .lc a:nth-child(3) span i {
+    background-position-x: -72px;
+}
+
+.box .jhlc .lc a:nth-child(4) span i {
+    background-position-x: -108px;
+}
+
+.box .jhlc .lc a:nth-child(5) span i {
+    background-position-x: -144px;
+}
+
+.box .jhlc .lc a:nth-child(6) span i {
+    background-position-x: -180px;
+}
+
+.box .jhlc .lc a:nth-child(7) span i {
+    background-position-x: -216px;
+}
+
+.box .jhlc .lc a:nth-child(8) span i {
+    background-position-x: -252px;
+}
+
+.box .jhlc .lc a p {
+    display: none;
+}
+
+.box .jhlc .lc a:hover span {
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.box .jhlc .lc a:hover span i {
+    background-position-y: -36px;
+}
+
+.box .jhlc .lc a:hover p {
+    display: block;
+    transition: all 0.3s;
+}
+
+
+/* 热门城市 */
+
+
+/* .box .rmcs {
+    height: 590px;
+} */
+
+.box .rmcs h2 {
+    margin-top: 155px;
+}
+
+.box .rmcs .cs {
+    width: 100%;
+    height: 257px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.box .rmcs .cs a {
+    width: 224px;
+    height: 220px;
+    color: #000;
+    position: relative;
+    margin-top: 48px;
+    box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.box .rmcs .cs a p {
+    font-size: 20px;
+    margin: 20px 20px;
+}
+
+.box .rmcs .cs a div {
+    display: none;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    position: absolute;
+    left: 85px;
+    top: 85%;
+    margin: auto;
+    background: url(../images/jiantou.png) no-repeat center center, red;
+    background-size: 21px 15px;
+}
+
+.box .rmcs .cs a img {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.box .rmcs .cs a:hover img {
+    opacity: 0.7;
+}
+
+.box .rmcs .cs a:hover div {
+    display: block;
+}
+
+.box .rmcs .content>p {
+    margin-top: 35px;
+    margin-bottom: 76px;
+}
+
+.box .rmcs .content>p span {
+    display: block;
+    width: 100px;
+    float: left;
+    padding-left: 20px;
+    background: url(../images/dw.png) no-repeat 0 center;
+    background-size: 14px 16px;
+    border-right: 1px solid #000;
+}
+
+.box .rmcs .content>p a {
+    color: #000;
+    margin-left: 20px;
+}
+
+.box .rmcs .content>p a:hover {
+    text-decoration: underline;
+}
+
+
+/* 结婚用品 */
+
+.box .jhyp .content {
+    overflow: hidden;
+}
+
+.box .jhyp {
+    text-align: center;
+    background: linear-gradient(#f9f9f9, #fff);
+}
+
+.box .jhyp h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.box .jhyp .content>p a {
+    color: #000;
+}
+
+.box .jhyp .content>p a:hover span {
+    text-decoration: underline;
+}
+
+.box .jhyp .content>p a span {
+    padding: 0 10px;
+}
+
+.box .jhyp .content>p a:nth-child(-n+5)::after {
+    content: "/";
+    color: #bbb;
+}
+
+.box .jhyp .yp {
+    margin-top: 40px;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.box .jhyp .yp .jtyp {
+    position: relative;
+}
+
+.box .jhyp .yp .jtyp img {
+    cursor: pointer;
+}
+
+.box .jhyp .yp .jtyp img:hover {
+    opacity: 0.9;
+    transition: all 0.4s;
+}
+
+.box .jhyp .yp .jtyp .ypjs {
+    width: 253px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    text-align: left;
+    margin: auto;
+    background: #fff;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.06);
+}
+
+.box .jhyp .yp .jtyp .ypjs:hover {
+    bottom: 10px;
+    transition: all 0.3s;
+}
+
+.box .jhyp .yp .jtyp .ypjs div {
+    width: 40px;
+    height: 2px;
+    margin-top: 15px;
+    background: red;
+}
+
+.box .jhyp .yp .jtyp .ypjs p {
+    margin-top: 15px;
+}
+
+.box .jhyp .yp .jtyp .ypjs p a {
+    color: #000;
+}
+
+.box .jhyp .yp .jtyp .ypjs p a span {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.box .jhyp .yp .jtyp .ypjs p a:nth-child(-n+2)::after {
+    content: "/";
+    color: #bbb;
+}
+
+.box .jhyp .yp .jtyp .ypjs p a:hover span {
+    text-decoration: underline;
+}
+
+.box .jhyp .gd {
+    display: block;
+    margin-top: 30px;
+    color: white;
+    width: 160px;
+    height: 48px;
+    background-color: red;
+    border-radius: 48px;
+    box-shadow: 0px 16px 24px 0px rgba(248, 50, 68, 0.2);
+    /* margin-bottom: 75px; */
+    margin: 48px auto;
+    cursor: pointer;
+    line-height: 48px;
+}
+
+.box .jhyp .gd span {
+    vertical-align: middle;
+}
+
+.box .jhyp .gd img {
+    width: 21px;
+    height: 15px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
