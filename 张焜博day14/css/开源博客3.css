@@ -1,0 +1,47 @@
+#boke .content {
+    width: 90%;
+}
+
+#boke .bk-header .nav a {
+    display: block;
+    height: 55px;
+    text-align: center;
+}
+
+#boke .bk-header .nav #nav:target {
+    display: block;
+    height: auto;
+    transition: height 2s;
+}
+
+#boke .bk-header .nav .list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    top: 99%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: flex-start;
+    background-color: #fff;
+    line-height: 46px;
+}
+
+
+/* #boke .bk-header #nav:target ul{
+    display: block;
+} */
+
+#boke .bk-main .content .main-left {
+    width: 90%;
+}
+
+#boke .bk-main .content .main-r {
+    width: 90%;
+}
+
+#boke .bo-footer .content .bo-foot-t .main-r1 {
+    width: 90%;
+}

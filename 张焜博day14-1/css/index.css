@@ -1,0 +1,239 @@
+html,
+body {
+  height: 100%;
+}
+
+#index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#index .ind-header {
+  height: 44px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+
+#index .ind-main {
+  flex: 1;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+}
+
+#index .ind-main > div {
+  flex-shrink: 0;
+  margin-top: 12px;
+}
+
+#index .ind-main > div:first-child {
+  margin-top: 0;
+}
+
+#index .ind-main .banner {
+  width: 100%;
+  height: 210px;
+  background: url(../images/banner.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+#index .ind-main .icon ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 10px 0;
+  background-color: #fff;
+}
+
+#index .ind-main .icon ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#index .ind-main .icon ul li span {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 400% 100%;
+}
+
+#index .ind-main .icon ul li a {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 8px;
+  color: #000;
+}
+
+#index .ind-main .icon ul li:nth-child(2) span {
+  background-position-x: -40px;
+}
+
+#index .ind-main .icon ul li:nth-child(3) span {
+  background-position-x: -80px;
+}
+
+#index .ind-main .icon ul li:nth-child(4) span {
+  background-position-x: -120px;
+}
+
+#index .ind-main .bg {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bg.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+#index .ind-main .bg p {
+  width: 160px;
+}
+
+#index .ind-main .bg p span {
+  color: #58bc58;
+  font-size: 8px;
+  line-height: 12px;
+  border: 1px solid #58bc58;
+  margin-right: 14px;
+}
+
+#index .ind-main .bg p a {
+  color: #000;
+  font-size: 10px;
+}
+
+#index .ind-main .goods {
+  padding: 0 7px 0 7px;
+  background-color: #fff;
+}
+
+#index .ind-main .goods .list1 {
+  height: 170px;
+  width: 100%;
+  background: url(../images/list1.jpg) no-repeat center center;
+  background-size: auto 100%;
+}
+
+#index .ind-main .goods .goods-box ul {
+  display: flex;
+  overflow: auto;
+}
+
+#index .ind-main .goods .goods-box ul li {
+  margin-left: 15px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#index .ind-main .goods .goods-box ul li img {
+  width: 100%;
+}
+
+#index .ind-main .goods .goods-box ul li p {
+  text-align: center;
+  font-size: 8px;
+  line-height: 12px;
+}
+
+#index .ind-main .goods .goods-box ul li i {
+  font-size: 9px;
+  font-weight: 900;
+}
+
+#index .ind-main .goods2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#index .ind-main .goods2 .goods2-box {
+  width: 40%;
+  padding: 7px;
+  background-color: #fff;
+}
+
+#index .ind-main .goods2 .goods2-box img {
+  width: 100%;
+}
+
+#index .ind-main .goods2 .goods2-box p {
+  font-size: 9px;
+  line-height: 13px;
+}
+
+#index .ind-main .goods2 .goods2-box span:nth-child(3) {
+  font-size: 10px;
+  color: red;
+  float: left;
+}
+
+#index .ind-main .goods2 .goods2-box span:nth-child(4) {
+  font-size: 10px;
+  color: #ccc;
+  float: right;
+}
+
+#index .ind-main .goods2 > div {
+  margin-bottom: 10px;
+}
+
+#index .ind-main .goods2 > div:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+#index .ind-footer {
+  height: 75px;
+}
+
+#index .ind-footer .nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#index .ind-footer .nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#index .ind-footer .nav li span {
+  width: 40px;
+  height: 40px;
+  background-size: 160px auto;
+  background: url(../images/nav.png) no-repeat 0 0;
+}
+
+#index .ind-footer .nav li a {
+  color: #b9b9b9;
+}
+
+#index .ind-footer .nav li:nth-child(2) span {
+  background-position-x: -50px;
+}
+
+#index .ind-footer .nav li:nth-child(3) span {
+  background-position-x: -100px;
+}
+
+#index .ind-footer .nav li:nth-child(4) span {
+  background-position-x: -150px;
+}
+
+#index .ind-footer .nav li:target span {
+  background-position: 0 -60px;
+}
+
+#index .ind-footer .nav li:target a {
+  color: #000;
+}
