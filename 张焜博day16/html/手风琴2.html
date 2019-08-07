@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 720px;
+            height: 320px;
+            margin: 100px auto;
+            display: flex;
+        }
+        
+        .box .minbox {
+            width: 20%;
+            height: 100%;
+            box-shadow: 0 0 5px 0 #ccc;
+            transition: width 2s ease-in-out .1s;
+        }
+        
+        .box .minbox:nth-child(1) {
+            background: url(../imgs/img1.jpg) no-repeat 0 center;
+        }
+        
+        .box .minbox:nth-child(2) {
+            background: url(../imgs/img2.jpg) no-repeat 0 center;
+        }
+        
+        .box .minbox:nth-child(3) {
+            background: url(../imgs/img3.jpg) no-repeat 0 center;
+        }
+        
+        .box .minbox:nth-child(4) {
+            background: url(../imgs/img4.jpg) no-repeat 0 center;
+        }
+        
+        .box .minbox:nth-child(5) {
+            background: url(../imgs/img5.jpg) no-repeat 0 center;
+        }
+        
+        .box:hover .minbox {
+            width: 20px;
+        }
+        
+        .box .minbox:hover {
+            width: 640px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="minbox"></div>
+        <div class="minbox"></div>
+        <div class="minbox"></div>
+        <div class="minbox"></div>
+        <div class="minbox"></div>
+    </div>
+</body>
+
+</html>

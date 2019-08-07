@@ -3,6 +3,14 @@ body {
   height: 100%;
 }
 
+html {
+  font-size: 26.67vw;
+}
+
+body {
+  font-size: 0.16rem;
+}
+
 #index {
   width: 100%;
   height: 100%;
@@ -11,7 +19,7 @@ body {
 }
 
 #index .ind-header {
-  height: 44px;
+  height: 0.44rem;
   background: url(../images/logo.png) no-repeat center center;
 }
 
@@ -26,7 +34,7 @@ body {
 
 #index .ind-main > div {
   flex-shrink: 0;
-  margin-top: 12px;
+  margin-top: 0.12rem;
 }
 
 #index .ind-main > div:first-child {
@@ -35,7 +43,7 @@ body {
 
 #index .ind-main .banner {
   width: 100%;
-  height: 210px;
+  height: 2.1rem;
   background: url(../images/banner.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
@@ -43,7 +51,7 @@ body {
 #index .ind-main .icon ul {
   display: flex;
   justify-content: space-around;
-  padding: 8px 0 10px 0;
+  padding: 0.1rem;
   background-color: #fff;
 }
 
@@ -55,8 +63,8 @@ body {
 }
 
 #index .ind-main .icon ul li span {
-  width: 40px;
-  height: 40px;
+  width: 0.4rem;
+  height: 0.4rem;
   background-image: url(../images/icon.png);
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -65,25 +73,25 @@ body {
 
 #index .ind-main .icon ul li a {
   width: 100%;
-  margin-top: 10px;
-  font-size: 8px;
+  margin-top: 0.1rem;
+  font-size: 0.08rem;
   color: #000;
 }
 
 #index .ind-main .icon ul li:nth-child(2) span {
-  background-position-x: -40px;
+  background-position-x: -0.4rem;
 }
 
 #index .ind-main .icon ul li:nth-child(3) span {
-  background-position-x: -80px;
+  background-position-x: -0.8rem;
 }
 
 #index .ind-main .icon ul li:nth-child(4) span {
-  background-position-x: -120px;
+  background-position-x: -1.2rem;
 }
 
 #index .ind-main .bg {
-  height: 75px;
+  height: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,29 +101,29 @@ body {
 }
 
 #index .ind-main .bg p {
-  width: 160px;
+  width: 1.6rem;
 }
 
 #index .ind-main .bg p span {
   color: #58bc58;
-  font-size: 8px;
-  line-height: 12px;
-  border: 1px solid #58bc58;
-  margin-right: 14px;
+  font-size: 0.08rem;
+  line-height: 0.12rem;
+  border: 0.01rem solid #58bc58;
+  margin-right: 0.14rem;
 }
 
 #index .ind-main .bg p a {
   color: #000;
-  font-size: 10px;
+  font-size: 0.1rem;
 }
 
 #index .ind-main .goods {
-  padding: 0 7px 0 7px;
+  padding: 0.07rem;
   background-color: #fff;
 }
 
 #index .ind-main .goods .list1 {
-  height: 170px;
+  height: 1.7rem;
   width: 100%;
   background: url(../images/list1.jpg) no-repeat center center;
   background-size: auto 100%;
@@ -127,8 +135,8 @@ body {
 }
 
 #index .ind-main .goods .goods-box ul li {
-  margin-left: 15px;
-  width: 100px;
+  margin-left: 0.15rem;
+  width: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,12 +149,12 @@ body {
 
 #index .ind-main .goods .goods-box ul li p {
   text-align: center;
-  font-size: 8px;
-  line-height: 12px;
+  font-size: 0.08rem;
+  line-height: 0.12rem;
 }
 
 #index .ind-main .goods .goods-box ul li i {
-  font-size: 9px;
+  font-size: 0.09rem;
   font-weight: 900;
 }
 
@@ -159,7 +167,7 @@ body {
 
 #index .ind-main .goods2 .goods2-box {
   width: 40%;
-  padding: 7px;
+  padding: 0.07rem;
   background-color: #fff;
 }
 
@@ -168,24 +176,24 @@ body {
 }
 
 #index .ind-main .goods2 .goods2-box p {
-  font-size: 9px;
-  line-height: 13px;
+  font-size: 0.09rem;
+  line-height: 0.13rem;
 }
 
 #index .ind-main .goods2 .goods2-box span:nth-child(3) {
-  font-size: 10px;
+  font-size: 0.1rem;
   color: red;
   float: left;
 }
 
 #index .ind-main .goods2 .goods2-box span:nth-child(4) {
-  font-size: 10px;
+  font-size: 0.1rem;
   color: #ccc;
   float: right;
 }
 
 #index .ind-main .goods2 > div {
-  margin-bottom: 10px;
+  margin-bottom: 0.1rem;
 }
 
 #index .ind-main .goods2 > div:nth-last-child(-n+2) {
@@ -193,7 +201,7 @@ body {
 }
 
 #index .ind-footer {
-  height: 75px;
+  height: 0.75rem;
 }
 
 #index .ind-footer .nav {
@@ -208,9 +216,9 @@ body {
 }
 
 #index .ind-footer .nav li span {
-  width: 40px;
-  height: 40px;
-  background-size: 160px auto;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-size: 400% auto;
   background: url(../images/nav.png) no-repeat 0 0;
 }
 
@@ -219,19 +227,19 @@ body {
 }
 
 #index .ind-footer .nav li:nth-child(2) span {
-  background-position-x: -50px;
+  background-position-x: -0.5rem;
 }
 
 #index .ind-footer .nav li:nth-child(3) span {
-  background-position-x: -100px;
+  background-position-x: -1rem;
 }
 
 #index .ind-footer .nav li:nth-child(4) span {
-  background-position-x: -150px;
+  background-position-x: -1.5rem;
 }
 
 #index .ind-footer .nav li:target span {
-  background-position: 0 -60px;
+  background-position: 0 -0.6rem;
 }
 
 #index .ind-footer .nav li:target a {
