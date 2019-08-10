@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 80px;
+            height: 80px;
+            margin: 200px auto;
+            border: 2px solid #ccc;
+            background: url(images/app-download.png) no-repeat 0 center;
+        }
+        /* div:hover {
+            animation: move 1.5s steps(16, end);
+        }
+        
+        @keyframes move {
+            0% {
+                background-position-x: 0;
+            }
+            100% {
+                background-position-x: -1280px;
+            }
+        }
+        
+        @keyframes move2 {
+            0% {
+                background-position-x: -720px;
+            }
+            100% {
+                background-position-x: -1280px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box" id="ii">
+
+    </div>
+</body>
+<script>
+    //创建对象
+    var move = {
+        elem: document.getElementById("ii"), //获取元素
+        position: 0, //保存背景图片当前的坐标
+        timeOver: null, //用于储存setTimeout,以便使用clearTimeout来清除动画队列
+        timeOut: null,
+        po: "px 0px",
+        mouseOver: function() {
+            clearTimeout(move.timeOut); //鼠标移入后清除鼠标移出的动画
+            if (move.position > -1200) { //判断是否到达终点
+                move.position -= 80; //每次移动80px
+                move.elem.style.backgroundPosition = move.position + move.po; //背景图片定位
+                move.timeOver = setTimeout("move.mouseOver()", 100); //每0.1秒移动一次,递归调用
+            } else {
+                // clearTimeout(move.timeOver); //到达终点时停止动画
+                move.position = -800;
+                move.position -= 80; //每次移动80px
+                move.elem.style.backgroundPosition = move.position + move.po; //背景图片定位
+                move.timeOver = setTimeout("move.mouseOver()", 100); //每0.1秒移动一次,递归调用
+            }
+        },
+        mouseOut: function() {
+            clearTimeout(move.timeOver);
+            if (move.position < 0) {
+                move.position += 80;
+                move.elem.style.backgroundPosition = move.position + move.po;
+                move.timeOut = setTimeout("move.mouseOut()", 100);
+            } else {
+                clearTimeout(move.timeOut);
+            }
+        }
+    };
+
+    //绑定相应事件的相应函数
+    move.elem.addEventListener("mouseover", move.mouseOver, false);
+    move.elem.addEventListener("mouseout", move.mouseOut, false);
+</script>
+
+</html>

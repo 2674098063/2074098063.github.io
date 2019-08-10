@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 80px;
+            height: 80px;
+            margin: 200px auto;
+            border: 2px solid #ccc;
+            background: url(images/app-download.png) no-repeat 0 center;
+        }
+        
+        div:hover {
+            animation: move 1.5s steps(16, end);
+        }
+        
+        @keyframes move {
+            0% {
+                background-position-x: 0;
+            }
+            100% {
+                background-position-x: -1280px;
+            }
+        }
+        
+        @keyframes move2 {
+            0% {
+                background-position-x: -720px;
+            }
+            100% {
+                background-position-x: -1280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="ii">
+
+    </div>
+</body>
+
+</html>
