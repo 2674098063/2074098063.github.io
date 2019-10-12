@@ -1,0 +1,23 @@
+{
+  "id": "1446203",
+  "name": "nsg",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2066562",
+      "name": "首页",
+      "font_class": "menu-index",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9935466",
+      "name": "购物车",
+      "font_class": "gouwuche-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

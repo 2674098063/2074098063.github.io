@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/mod.min.css?v=<php>echo data('Y-m-d h:i:s',stime());<php>">
+    <link rel="stylesheet" href="css/item.min.css?v=<php>echo data('Y-m-d h:i:s',stime());<php>">
+</head>
+
+<body>
+
+    <!-- 顶部登陆状态栏 -->
+    <div id="topbox"></div>
+    <!-- 网页头部 -->
+    <header class="wrapper clearfix">
+    </header>
+    <!-- 导航 -->
+    <nav>
+    </nav>
+    <!-- 网站地图 -->
+    <div class="nch-breadcrumb-layout clearfix"></div>
+    <!-- content -->
+    <div class="con wrapper">
+        <div class="ncs-detail">
+            <!-- 放大镜 -->
+            <div id="ncs-goods-picture" class="ncs-goods-picture">
+                <div class="gallery_wrap">
+                    <div class="gallery">
+                        <div class="container">
+                            <div class="moveView"></div>
+                            <img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" src="" class="cloudzoom">
+                        </div>
+                    </div>
+                </div>
+                <div class="controller_wrap">
+                    <div class="controller">
+                        <ul>
+                            <li class="current"><img title="" src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05577108057338321_360.jpg" class="cloudzoom-gallery"></li>
+                            <li><img title="" src="https://www.nanshig.com/data/upload/shop/store/goods/32/32_05539476221284025_360.jpg" class="cloudzoom-gallery"></li>
+                            <li><img title="" src="https://www.nanshig.com/data/upload/shop/store/goods/32/32_05539476298356726_360.jpg" class="cloudzoom-gallery"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view">
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <!-- 商品信息 -->
+            <div class="ncs-goods-summary">
+                <div class="name">
+                    <h1></h1>
+                    <strong></strong> </div>
+                <div class="ncs-meta">
+                    <!-- S 商品参考价格 -->
+                    <dl>
+                        <dt>市&nbsp;场&nbsp;价：</dt>
+                        <dd class="cost-price"><strong>¥418.00</strong></dd>
+                    </dl>
+                    <!-- E 商品参考价格 -->
+                    <!-- S 商品发布价格 -->
+                    <dl>
+                        <dt>商&nbsp;城&nbsp;价：</dt>
+                        <dd class="price">
+                            <strong>¥209.00</strong>
+                        </dd>
+                    </dl>
+                    <dl class="rate">
+                        <dt>商品评分：</dt>
+                        <!-- S 描述相符评分 -->
+                        <dd>
+                            <span class="raty" data-score="5" title="很满意" style="width: 100px;">
+                                <img src="https://www.nanshig.com/data/resource/js/jquery.raty/img/star-on.png" alt="1" title="很满意">&nbsp;
+                                <img src="https://www.nanshig.com/data/resource/js/jquery.raty/img/star-on.png" alt="2" title="很满意">&nbsp;
+                                <img src="https://www.nanshig.com/data/resource/js/jquery.raty/img/star-on.png" alt="3" title="很满意">&nbsp;
+                                <img src="https://www.nanshig.com/data/resource/js/jquery.raty/img/star-on.png" alt="4" title="很满意">&nbsp;
+                                <img src="https://www.nanshig.com/data/resource/js/jquery.raty/img/star-on.png" alt="5" title="很满意">
+                                <input type="hidden" name="score" value="5" readonly="readonly">
+                            </span>
+                            <a href="#ncGoodsRate">共有0条评价</a>
+                        </dd>
+                        <!-- E 描述相符评分 -->
+                    </dl>
+                    <!-- E 商品发布价格 -->
+                    <div class="ncs-goods-code">
+                        <p>
+                            <img src="https://www.nanshig.com/data/upload/shop/store/42/224017.png" title="用商城手机客户端扫描二维码直达商品详情内容">
+                        </p>
+                        <span class="ncs-goods-code-note"><i></i>客户端扫购有惊喜</span>
+                    </div>
+                </div>
+                <!-- S 促销 -->
+                <!-- E 促销 -->
+                <!--送达时间 begin  -->
+                <!--送达时间 end  -->
+                <div class="ncs-logistics">
+                    <!-- S 物流与运费新布局展示  -->
+                    <dl id="ncs-freight" class="ncs-freight">
+                        <dt>配&nbsp;&nbsp;送&nbsp;&nbsp;至：</dt>
+                        <dd class="ncs-freight_box">
+                            <div id="ncs-freight-selector" class="ncs-freight-select">
+                                <div class="text">
+                                    <div>请选择地区</div>
+                                    <b>∨</b>
+                                </div>
+                                <div class="content">
+                                    <div id="ncs-stock" class="ncs-stock" data-widget="tabs">
+                                        <div class="mt">
+                                            <ul class="tab">
+                                                <li data-index="0" data-widget="tab-item" class="curr">
+                                                    <a href="#none" class="hover"><em>请选择</em><i> ∨</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="stock_province_item" data-widget="tab-content" data-area="0">
+                                            <ul class="area-list">
+                                                <li>
+                                                    <a data-value="1" href="#none">北京</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="2" href="#none">天津</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="3" href="#none">河北</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="4" href="#none">山西</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="5" href="#none">内蒙古</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="6" href="#none">辽宁</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="7" href="#none">吉林</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="8" href="#none">黑龙江</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="9" href="#none">上海</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="10" href="#none">江苏</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="11" href="#none">浙江</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="12" href="#none">安徽</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="13" href="#none">福建</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="14" href="#none">江西</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="15" href="#none">山东</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="16" href="#none">河南</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="17" href="#none">湖北</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="18" href="#none">湖南</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="19" href="#none">广东</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="20" href="#none">广西</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="21" href="#none">海南</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="22" href="#none">重庆</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="23" href="#none">四川</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="24" href="#none">贵州</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="25" href="#none">云南</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="26" href="#none">西藏</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="27" href="#none">陕西</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="28" href="#none">甘肃</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="29" href="#none">青海</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="30" href="#none">宁夏</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="31" href="#none">新疆</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="32" href="#none">台湾</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="33" href="#none">香港</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="34" href="#none">澳门</a>
+                                                </li>
+                                                <li>
+                                                    <a data-value="35" href="#none">海外</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="stock_city_item" data-widget="tab-content" data-area="1" style="display: none;">
+                                            <ul class="area-list">
+                                            </ul>
+                                        </div>
+                                        <div id="stock_area_item" data-widget="tab-content" data-area="2" style="display: none;">
+                                            <ul class="area-list">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href=" ###;" class="close">关闭</a>
+                            </div>
+                            <div id="ncs-freight-prompt">
+                                <strong>有货</strong> 免运费
+                            </div>
+                        </dd>
+                    </dl>
+                    <!-- S 物流与运费新布局展示  -->
+                </div>
+                <div class="ncs-key">
+                    <!-- S 商品规格值-->
+                    <hr>
+                    <dl nctype="nc-spec">
+                        <dt>颜色：</dt>
+                        <dd>
+                            <ul nctyle="ul_sign">
+                                <!-- 图片类型规格-->
+                                <li class="sp-img">
+                                    <a href=" ### ;" class="hovered" data-param="{valid:9458}" title="黑/安踏白">
+                                        <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05577108057338321_60.jpg">黑/安踏白<i></i>
+                                    </a>
+                                </li>
+                                <!-- 图片类型规格-->
+                                <li class="sp-img">
+                                    <a href=" ### ;" class="" data-param="{valid:9459}" title="深蓝/正蓝/安踏白">
+                                        <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05577108035908996_60.jpg">深蓝/正蓝/安踏白<i></i>
+                                    </a>
+                                </li>
+                                <!-- 图片类型规格-->
+                                <li class="sp-img">
+                                    <a href=" ### ;" class="" data-param="{valid:9460}" title="中灰/浅灰/安踏白/黑">
+                                        <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05577108011402462_60.jpg">中灰/浅灰/安踏白/黑<i></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl nctype="nc-spec">
+                        <dt>尺码：</dt>
+                        <dd>
+                            <ul nctyle="ul_sign">
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="hovered" data-param="{valid:9461}">39<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9462}">40<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9463}">41<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9464}">42<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9465}">43<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9593}">40.5<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9594}">42.5<i></i>
+                                </a>
+                                </li>
+                                <!-- 文字类型规格-->
+                                <li class="sp-txt">
+                                    <a href=" ### " class="" data-param="{valid:9595}">44.5<i></i>
+                                </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <!-- E 商品规格值-->
+                </div>
+                <!-- S 购买数量及库存 -->
+                <div class="ncs-buy">
+                    <div class="ncs-figure-input">
+                        <input type="text" name="" id="quantity" value="1" size="3" maxlength="6" class="input-text">
+                        <a href=" ### " class="increase" nctype="increase">+</a>
+                        <a href=" ### " class="decrease" nctype="decrease">-</a>
+                    </div>
+
+                    <div class="ncs-point" style="display: none;"><i></i>
+                        <!-- S 库存 -->
+                        <span>您选择的商品库存<strong nctype="goods_stock"></strong>件</span>
+                        <!-- E 库存 -->
+                    </div>
+                    <!-- S 提示已选规格及库存不足无法购买 -->
+                    <!-- E 提示已选规格及库存不足无法购买 -->
+                    <div class="ncs-btn">
+                        <!--  限制购买-->
+                        <!-- 加入购物车-->
+                        <a href=" ### ;" nctype="addcart_submit" class="addcart " title="添加购物车">
+                            <i class="icon-shopping-cart"></i>添加购物车
+                        </a>
+                        <!-- 立即购买-->
+                        <a href=" ### ;" nctype="buynow_submit" class="buynow " title="立即购买">立即购买</a>
+                        <!--  end-->
+                        <!-- S 加入购物车弹出提示框 -->
+                        <div class="ncs-cart-popup">
+                            <dl>
+                                <dt>成功添加到购物车<a title="关闭" >X</a></dt>
+                                <dd>购物车共有 <strong id="bold_num"></strong> 种商品 总金额为：<em id="bold_mly" class="saleP"></em></dd>
+                                <dd class="btns">
+                                    <a href=" ### ;" class="ncs-btn-mini ncs-btn-green">查看购物车</a>
+                                    <a href=" ### ;" class="ncs-btn-mini" value="">继续购物</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- E 加入购物车弹出提示框 -->
+                    </div>
+                    <!-- E 购买按钮 -->
+                </div>
+                <!-- E 购买数量及库存 -->
+                <!--E 商品信息 -->
+            </div>
+            <!-- E 商品图片及收藏分享 -->
+            <div class="ncs-handle">
+                <!-- S 分享 -->
+                <a href=" ### ;" class="share" nc_type="sharegoods" data-param="{&quot;gid&quot;:&quot;224017&quot;}">
+                    <i></i>分享<span>(<em nc_type="sharecount_224017">0</em>)</span>
+                </a>
+                <!-- S 收藏 -->
+                <a href=" ###collect_goods('224017','count','goods_collect');" class="favorite">
+                    <i></i>收藏商品<span>(<em nctype="goods_collect">1</em>)</span>
+                </a>
+                <!-- S 对比 -->
+                <a href=" ### ;" class="compare" nc_type="compare_224017" data-param="{&quot;gid&quot;:&quot;224017&quot;}">
+                    <i></i>加入对比
+                </a>
+                <!-- S 举报 -->
+                <a href="index.php?act=member_inform&amp;op=inform_submit&amp;goods_id=224017" title="举&nbsp;报" class="inform">
+                    <i></i>举&nbsp;报
+                </a>
+                <!-- End -->
+            </div>
+            <!-- 店铺信息 -->
+            <div style="position: absolute; z-index: 2; top: -1px; right: -1px;">
+
+                <!--店铺基本信息 S-->
+                <div class="ncs-info">
+                    <div class="title">
+                        <h4>寻优鞋品</h4>
+                    </div>
+                    <div class="content">
+                        <dl class="all-rate">
+                            <dt>综合评分：</dt>
+                            <dd>
+                                <div class="rating"><span style="width: 96%"></span></div>
+                                <em>4.8</em>分</dd>
+                        </dl>
+                        <div class="ncs-detail-rate">
+                            <h5><strong>店铺动态评分</strong>与行业相比</h5>
+                            <ul>
+                                <li> 描述相符<span class="credit">4.6 分</span> <span class=""><i></i><em></em></span> </li>
+                                <li> 服务态度<span class="credit">4.9 分</span> <span class=""><i></i><em></em></span> </li>
+                                <li> 发货速度<span class="credit">4.8 分</span> <span class=""><i></i><em></em></span> </li>
+                            </ul>
+                        </div>
+                        <dl class="messenger">
+                            <dt>联系方式：</dt>
+                            <dd><span member_id="3011"></span>
+                            </dd>
+                        </dl>
+                        <!--保证金金额-->
+                        <dl class="no-border">
+                            <dt>公司名称：</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>所&nbsp;&nbsp;在&nbsp;&nbsp;地：</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>电　　话：</dt>
+                            <dd>下载男士购app联系客服</dd>
+                        </dl>
+
+                        <div class="goto"><a href="https://www.nanshig.com/shop/shop-42.html">进入商家店铺</a><a href=" ###collect_store('42','count','store_collect')">收藏店铺<em nctype="store_collect">3</em></a></div>
+                        <div class="shop-other" id="shop-other">
+                            <ul>
+                                <li class="ncs-info-btn-map"><a href=" ### " class="pngFix"><span>店铺地图</span><b></b> <!-- 店铺地图 -->
+                      <div class="ncs-info-map" id="map_container" style="width:208px;height:208px;"></div>
+                      </a></li>
+                                <li class="ncs-info-btn-qrcode"><a href=" ### " class="pngFix"><span>店铺二维码</span><b></b>
+                      <p class="ncs-info-qrcode"><img src="https://www.nanshig.com/data/upload/shop/store/42/42_store.png" title="店铺原始地https://www.nanshig.com/shop/shop_view-42-0-0-0-0.html" style="width:208px;height:208px"></p>
+                      </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--店铺基本信息 E-->
+                <!--E 店铺信息 -->
+
+            </div>
+        </div>
+        <div id="content" class="ncs-goods-layout expanded">
+            <div class="ncs-goods-main" id="main-nav-holder">
+                <div class="tabbar pngFix" id="main-nav">
+                    <div class="ncs-goods-title-nav">
+                        <ul id="categorymenu">
+                            <li class="current"><a id="tabGoodsIntro" href="#content">商品详情</a></li>
+                            <li><a id="tabGoodsRate" href="#content">商品评价<em>(0)</em></a></li>
+                            <li><a id="tabGoodsTraded" href="#content">销售记录<em>(0)</em></a></li>
+                            <li><a id="tabGuestbook" href="#content">购买咨询</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ncs-intro">
+                    <div class="content bd" id="ncGoodsIntro">
+                        <ul class="nc-goods-sort">
+                            <li>品牌：安踏</li>
+                        </ul>
+                        <div class="ncs-goods-info-content">
+                            <div class="default">
+                                <div class="tm-clear tb-hidden tm_brandAttr" id="J_BrandAttr" style="margin:0px;padding:8px 20px 10px;color:#404040;font-family:tahoma, arial, 微软雅黑, sans-serif;background-color:#FFFFFF;">
+                                    <div class="name" style="margin:0px 15px 0px 0px;padding:0px;color:#666666;">
+                                        品牌名称：<a class="J_EbrandLogo" target="_blank" href="https://brand.tmall.com/brandInfo.htm?brandId=3424764&amp;type=0&amp;scm=1048.1.1.4">ANTA/安踏</a>
+                                    </div>
+                                    <a class="tm-collectBtn j_DetailBrand" href="https://detail.tmall.com/item.htm?spm=a230r.1.14.127.76bf523el2vM3&amp;id=527428010881&amp;ns=1&amp;abbucket=17&amp;skuId=3416320085993#"><i></i>关注</a>
+                                </div>
+                                <p class="attr-list-hd tm-clear" style="color:#999999;font-family:tahoma, arial, 微软雅黑, sans-serif;background-color:#FFFFFF;">
+                                    <span style="font-weight:700;">产品参数：</span>
+                                </p>
+                                <ul id="J_AttrUL" style="color:#404040;font-family:tahoma, arial, 微软雅黑, sans-serif;background-color:#FFFFFF;">
+                                    <li style="vertical-align:top;color:#666666;">
+                                        产品名称：ANTA/安踏 11625593
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        是否商场同款:&nbsp;是
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        颜色分类:&nbsp;黑/安踏白&nbsp;深蓝/正蓝/安踏白&nbsp;中灰/浅灰/安踏白/黑
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        款号:&nbsp;11625593
+                                    </li>
+                                    <li id="J_attrBrandName" style="vertical-align:top;color:#666666;">
+                                        品牌:&nbsp;ANTA/安踏
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        上市时间:&nbsp;2017年夏季
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        吊牌价:&nbsp;299
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        性别:&nbsp;男子
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        帮面材质:&nbsp;织物
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        外底材料:&nbsp;橡胶+EVA
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        适合路面:&nbsp;小道&nbsp;公路&nbsp;跑道
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        运动鞋科技:&nbsp;易弯折功能&nbsp;强化避震缓冲
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        功能:&nbsp;减震&nbsp;防滑&nbsp;耐磨&nbsp;透气&nbsp;吸汗&nbsp;包裹性&nbsp;支撑&nbsp;平衡&nbsp;抗冲击&nbsp;轻便
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        鞋码:&nbsp;39&nbsp;40&nbsp;40.5&nbsp;41&nbsp;42&nbsp;42.5&nbsp;43&nbsp;44.5
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        闭合方式:&nbsp;系带
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        流行元素:&nbsp;车缝线
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        运动系列:&nbsp;运动生活系列
+                                    </li>
+                                    <li style="vertical-align:top;color:#666666;">
+                                        是否瑕疵:&nbsp;否
+                                    </li>
+                                </ul>
+                                <img src="https://img.alicdn.com/imgextra/i1/2379175181/TB2W8bmb3ojyKJjy0FaXXakspXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i2/2379175181/TB2uixadJ3nyKJjSZFEXXXTTFXa_!!2379175181.jpg"
+                                    class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i1/2379175181/TB2yLMqb7UOyuJjy1XdXXXlkXXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;">
+                                <img src="https://img.alicdn.com/imgextra/i1/2379175181/TB28iEXb7.OyuJjSszeXXXY.VXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i4/2379175181/TB2hqYnb3ZjyKJjy0FhXXcdlFXa_!!2379175181.jpg"
+                                    class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i3/2379175181/TB2KnI7dD3myKJjSZFCXXbXxXXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;">
+                                <img src="https://img.alicdn.com/imgextra/i2/2379175181/TB2fPYNb1QkyKJjy0FoXXcxwpXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;">
+                                <img src="https://img.alicdn.com/imgextra/i2/2379175181/TB2KYxfdPZnyKJjSZFLXXXWqpXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i1/2379175181/TB2f._db7UkyKJjSszdXXbiCpXa_!!2379175181.jpg"
+                                    class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i3/2379175181/TB2flnrbVgkyKJjSspiXXcwBpXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;">
+                                <img src="https://img.alicdn.com/imgextra/i1/2379175181/TB2IL_ibVokyKJjy1zbXXXZfVXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;">
+                                <img src="https://img.alicdn.com/imgextra/i2/2379175181/TB2kwI1drslyKJjSZJiXXb1tFXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i3/2379175181/TB2zy.7dxwlyKJjSZFsXXar3XXa_!!2379175181.jpg"
+                                    class="img-ks-lazyload" alt="image" style="text-align: absmiddle;"><img src="https://img.alicdn.com/imgextra/i2/2379175181/TB2qZBddJsmyKJjSZFvXXcE.FXa_!!2379175181.jpg" class="img-ks-lazyload" alt="image" style="text-align: absmiddle;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ncs-comment">
+                    <div class="ncs-goods-title-bar hd">
+                        <h4><a href=" ### ;">商品评价</a></h4>
+                    </div>
+                    <div class="ncs-goods-info-content bd" id="ncGoodsRate">
+                        <div class="top">
+                            <div class="rate">
+                                <p><strong>100</strong><sub>%</sub>好评</p>
+                                <span>共有0人参与评分</span></div>
+                            <div class="percent">
+                                <dl>
+                                    <dt>好评<em>(100%)</em></dt>
+                                    <dd><i style="width: 100%"></i></dd>
+                                </dl>
+                                <dl>
+                                    <dt>中评<em>(0%)</em></dt>
+                                    <dd><i style="width: 0%"></i></dd>
+                                </dl>
+                                <dl>
+                                    <dt>差评<em>(0%)</em></dt>
+                                    <dd><i style="width: 0%"></i></dd>
+                                </dl>
+                            </div>
+                            <div class="btns"><span>您可对已购商品进行评价</span>
+                                <p>
+                                    <a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;op=index" class="ncs-btn ncs-btn-red" target="_blank">
+                                        <i class="icon-comment-alt"></i>评价商品
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ncs-goods-title-nav">
+                            <ul id="comment_tab">
+                                <li data-type="all" class="current"><a href=" ### ;">商品评价(0)</a>
+                                </li>
+                                <li data-type="1"><a href=" ### ;">好评(0)</a>
+                                </li>
+                                <li data-type="2"><a href=" ### ;">中评(0)</a>
+                                </li>
+                                <li data-type="3"><a href=" ### ;">差评(0)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="goodseval" class="ncs-commend-main">
+                            <div class="ncs-norecord">暂无符合条件的数据记录</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ncg-salelog">
+                    <div class="ncs-goods-title-bar hd">
+                        <h4><a href=" ### ;">销售记录</a></h4>
+                    </div>
+                    <div class="ncs-goods-info-content bd" id="ncGoodsTraded">
+                        <div class="top">
+                            <div class="price">商&nbsp;城&nbsp;价<strong>209.00</strong>元<span>购买的价格不同可能是由于店铺往期促销活动引起的，详情可以咨询卖家</span>
+                            </div>
+                        </div>
+                        <div id="salelog_demo" class="ncs-loading">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ncs-consult">
+                    <div class="ncs-goods-title-bar hd">
+                        <h4><a href=" ### ;">购买咨询</a></h4>
+                    </div>
+                    <div class="ncs-goods-info-content bd" id="ncGuestbook">
+                        <div id="consulting_demo" class="ncs-loading"> </div>
+                    </div>
+                </div>
+                <div class="ncs-recommend">
+                    <div class="title">
+                        <h4>推荐商品</h4>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt class="goods-name"><a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39<em></em></a></dt>
+                                    <dd class="goods-pic">
+                                        <a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">
+                                            <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" rel="lazy" data-url="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" alt="男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39" style="display: inline;">
+                                        </a>
+                                    </dd>
+                                    <dd class="goods-price">¥228.00</dd>
+                                </dl>
+                            </li>
+
+
+
+                            <li>
+                                <dl>
+                                    <dt class="goods-name"><a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39<em></em></a></dt>
+                                    <dd class="goods-pic">
+                                        <a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">
+                                            <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" rel="lazy" data-url="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" alt="男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39" style="display: inline;">
+                                        </a>
+                                    </dd>
+                                    <dd class="goods-price">¥228.00</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="goods-name"><a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39<em></em></a></dt>
+                                    <dd class="goods-pic">
+                                        <a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">
+                                            <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" rel="lazy" data-url="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" alt="男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39" style="display: inline;">
+                                        </a>
+                                    </dd>
+                                    <dd class="goods-price">¥228.00</dd>
+                                </dl>
+                            </li>
+
+                            <li>
+                                <dl>
+                                    <dt class="goods-name"><a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39<em></em></a></dt>
+                                    <dd class="goods-pic">
+                                        <a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">
+                                            <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" rel="lazy" data-url="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" alt="男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39" style="display: inline;">
+                                        </a>
+                                    </dd>
+                                    <dd class="goods-price">¥228.00</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="goods-name"><a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39<em></em></a></dt>
+                                    <dd class="goods-pic">
+                                        <a href="https://www.nanshig.com/shop/item-223535.html" target="_blank" title="">
+                                            <img src="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" rel="lazy" data-url="https://www.nanshig.com/data/upload/shop/store/goods/42/42_05575951076431186_240.jpg" alt="男鞋夏季男士透气学生运动鞋网面鞋跑步鞋青年鞋子 黑色 39" style="display: inline;">
+                                        </a>
+                                    </dd>
+                                    <dd class="goods-price">¥228.00</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+
+    </footer>
+    <!-- fixed -->
+    <div id="fixedbox">
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/mod.js"></script>
+<script src="js/topMenu.js"></script>
+<script src="js/item.js"></script>
+
+<script>
+    new mod();
+    new topMenu({
+        ele: '#main-nav'
+    });
+    new loupe({
+        container: ".container", //选择当前主图的承载容器
+        view: ".view", //图片放大后承载容器
+        moveView: ".moveView", //跟随鼠标移动的容器
+        containerImg: '.controller ul', //图片的容器:
+        thumbnail: ".controller li", //缩略图容器
+    });
+</script>
+
+</html>

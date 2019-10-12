@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>验证</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/mod.min.css?v=<php>echo data('Y-m-d h:i:s',stime());<php>">
+    <link rel="stylesheet" href="css/reg.min.css?v=<php>echo data('Y-m-d h:i:s',stime());<php>">
+</head>
+
+<body>
+    <div class="head">
+        <div class="wrapper header">
+            <h1 class="fl">
+                <a a href=" ### "></a>
+            </h1>
+            <div class="login-msg error">
+                <p class="error" style="float: none;width: auto;">
+                    为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+                </p>
+            </div>
+            <div class="nsgloginbtn">
+                <a href="">登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="nc-register-bg">
+        <div class="nc-register-box">
+            <div class="nc-register-layout">
+                <div class="left">
+                    <div class="nc-register-mode">
+                        <ul class="tabs-nav">
+
+                            <li style="width:100%"><a href="#" class="tabulous_active">注册<i></i></a></li><span class="tabulousclear"></span>
+                        </ul>
+                        <div id="tabs_container" class="tabs-container" style="height: 289px;">
+
+                            <div id="mobile" class="tabs-content" style="position: absolute; top: 0px;">
+                                <form id="post_form" method="post" class="nc-login-form">
+                                    <input type="hidden" name="formhash" value="Xfg8F4ds0U_B5Q7xh9CbS7ZpGCY_RHp"> <input type="hidden" name="form_submit" value="ok">
+                                    <input name="nchash" type="hidden" value="d8fa502d">
+                                    <dl>
+                                        <dt>用户名：</dt>
+                                        <dd>
+                                            <input type="text" class="text" tipmsg="" autocomplete="off" placeholder="6-20位数字、字母组合" name="phone" id="phone" style="color: rgb(187, 187, 187);">
+                                        </dd>
+                                    </dl>
+                                    <div style="height: 30px;"></div>
+                                    <div class="code-div">
+                                        <dl style="width: 400px;">
+                                            <dt>密码：</dt>
+                                            <dd>
+                                                <input type="text" name="captcha" class="text " id="image_captcha" size="10" tipmsg="密码：" placeholder="6-20位密码" style="color: rgb(187, 187, 187); width: 290px;">
+                                            </dd>
+                                        </dl>
+                                        <!-- <span><img src="" title="" name="codeimage" id="sms_codeimage"><a class="makecode" href=" ### ;" >看不清，换一张</a></span>  -->
+                                    </div>
+                                    <!-- <div class="tiptext" id="sms_text">确保上方验证码输入正确，点击<span><a href=" ### ;" ><i class="icon-mobile-phone"></i>发送短信验证</a></span>，并将您手机短信所接收到的“6位验证码”输入到下方短信验证，再提交下一步。</div> -->
+                                    <div style="height: 30px;"></div>
+                                    <dl>
+                                        <dt>昵称：</dt>
+                                        <dd>
+                                            <input type="text" name="sms_captcha" autocomplete="off" tipmsg="" class="text" id="sms_captcha" size="15" placeholder="昵称  可不填" style="color: rgb(187, 187, 187);">
+                                        </dd>
+                                    </dl>
+                                    <div class="submit-div">
+                                        <input type="button" id="submitBtn" class="submit" value="注册">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="api-login">
+                        <h4>使用第三方快捷账号登录</h4>
+                        <a href="" title="QQ账号登录" class="qq"><i></i></a>
+                        <a href="" title="新浪微博" class="sina"><i></i></a>
+                        <!--a href=" ### ;" onclick="ajax_form('weixin_form', '微信账号登录', 'https://www.nanshig.com/shop/index.php?act=connect_wx&op=index', 360);" title="微信账号登录" class="wx"><i></i></a-->
+                    </div>
+                    <div class="reister-after">
+                        <h4>注册之后您可以</h4>
+                        <ol>
+                            <li class="ico01"><i></i>购买商品支付订单</li>
+                            <li class="ico02"><i></i>收藏商品关注店铺</li>
+                            <li class="ico03"><i></i>安全交易诚信无忧</li>
+                            <li class="ico04"><i></i>积分获取优惠购物</li>
+                            <li class="ico05"><i></i>会员等级享受特权</li>
+                            <li class="ico06"><i></i>评价晒单站外分享</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+
+    </footer>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/mod.js"></script>
+<script>
+    new mod({
+        topbox: 0,
+        header: 0,
+        nav: 0,
+        map: 0,
+        fixbox: 0,
+    });
+    let regular = {
+        username: function(username) {
+            var reg = /^[a-zA-Z0-9][a-zA-Z0-9_]{5,19}$/;
+            return reg.test(username);
+        },
+        password: function(password) {
+            var reg = /^\S{6,20}$/;
+            return reg.test(password);
+        }
+    }
+    $('.nc-login-form #phone').on('blur', () => {
+        if (regular.username($('.nc-login-form #phone').val().trim())) {
+            let p = new Promise(function(resolve) {
+                $.ajax({
+                    url: 'api/01index.php',
+                    type: 'get',
+                    data: {
+                        name: $('.nc-login-form #phone').val().trim(),
+                        fangfa: 'check'
+                    },
+                    success: str => {
+                        resolve(str);
+                    }
+                });
+            });
+            p.then(function(data) {
+                if (data == 'yes') {
+                    $('.nc-login-form #phone').css('color', '#58bc58');
+                } else {
+                    alert('这个名字太受欢迎了');
+                    $('.nc-login-form #phone').val('');
+                }
+            });
+        } else {
+            $('.nc-login-form #phone').css('color', 'red');
+        }
+
+
+        $('#submitBtn').on('click', () => {
+            if (regular.password($('#image_captcha').val().trim()) && regular.username($('#phone').val().trim())) {
+
+                $.ajax({
+                    url: 'api/01index.php',
+                    type: 'post',
+                    data: {
+                        name: $('#phone').val().trim(),
+                        password: $('#image_captcha').val().trim(),
+                        nike: $('#sms_captcha').val().trim() ? $('#sms_captcha').val().trim() : $('#phone').val().trim(),
+                        fangfa: 'reg'
+                    },
+                    success: str => {
+                        res(str);
+                    }
+                });
+            } else {
+                alert('请按格式填写完整');
+            }
+
+            function res(data) {
+                if (data == 1) {
+
+                    window.location.href = '05login.html';
+                } else {
+                    alert('注册失败');
+                }
+            }
+        });
+
+    });
+</script>
+
+</html>

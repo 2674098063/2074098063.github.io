@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1570519488669'); /* IE9 */
+  src: url('iconfont.eot?t=1570519488669#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO8AAsAAAAAB9QAAANvAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqDOIMBATYCJAMMCwgABCAFhG0HRBvNBhHVm//IfiTGjpHMOrPvBqImfEmcCQTKqTqfm3pOCXmMWUcAzhDghUgJAN93M/QN4aPOMSX2lp++hV/Y6QspcD7P5fQm0IG0/nt5jmstu3t+1AswDijAvbANNEEKJEFvGLugJe6GAHSCSECUq1CtHhoq5iABiC4d27dEy7hRG4QCDYGpYqaKmIYdmjJeOQtMDb4v3pAmNFCwk5gja7Ur34ZSz3kupGEzmngEmumCAJsHEkgAVBD1K8O1kFE5AYmullUiYFudBDwXNhvP8dSb/cMDgQLChMl3ACAGVhR4jmPm0jSwggJcexRMsDoT2IBZj2eXyKBw4eqa7Cx0PPQJG8T14rneN4qLLdcss30MjHkeszx0r+ZWYZ3raZ472+NaPcPzXPXZ8z0S5sW1azNrjlfSnLne7S9Ut4jWE1evn28sWrdqwpoNS6wLN65tOXF3jts1Yc9qe5tPXD1/nkdAvXk+i/bpDhbHiRjrgrETNmxY4NVIn7BmwQJh3Wg2twh4+s62Vwis9HTq021n3Mq5M4mJWtvGtSylUb0rl+zf4c5OMWa0Y+s5fYwbpTr3z0l3WfjRbNvoSDe6u+yvXniaTdOeuFgt1nrzHg46PMh57vgmiYlGT2hjdf839kHkxbH/Lu/GXox8MPbdCuEW2L8g7R8Y4dj/jfo77gjxv7fbPnpn3KAtdXZ39f/paHmaFO3h5//DfZr/0iTL8UrOiUeydPd5Xi3dOx2KKeUVWFCWFgDYbPKk9AHbeXlXJv+13zC33PCLzZ0LvmlmFYBbhxsdDJK28yrdoqDdV0TAP9J0rFM1G9iiKmpHbUQlte+5pAC6FsOGGXfj/nCrZ2c+CDQ8EyjYEwiJRgSpsgmww0wGTGiUhE48FeebcacXEqGWAOIYDSBwYSsUnDgAiQvnSJW9Bzu8eAcTLkJCp75wX9FMlOiol9UFRlGT/VNX8exsnx5C4QtNGI2kdYHkB1m6HOVJlq89MUOmGLOsTaHqyAlP9AD7YRyZvHCPSpNW1Zdp6qpulFQ8RQeuAqOoyf6pq3h2XnM9FD7/QhNGIw2iquoPsnTtU55kHcinee4kupVDlrUpVB054YkeIIjRKjP56m49Kk3aAUVfpqiR62pOlrdO77cF0DGvIYUipFA5dMUc4m6usZ8bDluoWsQV+38UAQA=') format('woff2'),
+  url('iconfont.woff?t=1570519488669') format('woff'),
+  url('iconfont.ttf?t=1570519488669') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1570519488669#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-index:before {
+  content: "\e600";
+}
+
+.icon-gouwuche-copy:before {
+  content: "\e601";
+}
+

@@ -1,0 +1,1 @@
+class topMenu{constructor(e){this.def={ele:""},Object.assign(this.def,e),this.init()}init(){let e=$(this.def.ele).offset().top;$(window).on("scroll",()=>{window.scrollY>=e?$(this.def.ele).css({position:"fixed",top:"0","z-index":"999"}):$(this.def.ele).css({position:"",top:"","z-index":""})})}}

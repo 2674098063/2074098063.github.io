@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/mod.min.css?v=<php>echo data('Y-m-d h:i:s',stime());<php>">
+    <link rel="stylesheet" href="css/cart.min.css?v=<php>echo data('Y-m-d h:i:s',stime());<php>">
+</head>
+
+<body>
+    <!-- 顶部登陆状态栏 -->
+    <div id="topbox"></div>
+    <header class="ncc-head-layout wrapper clearfix">
+        <div class="site-logo">
+            <a href=""><img src="https://www.nanshig.com/data/upload/shop/common/05923582196171529.png" class="pngFix"></a>
+        </div>
+        <ul class="ncc-flow">
+            <li class="current"><i class="step1"></i>
+                <p>我的购物车</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+            <li class=""><i class="step2"></i>
+                <p>填写核对购物信息</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+            <li class=""><i class="step3"></i>
+                <p>支付提交</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+            <li class=""><i class="step4"></i>
+                <p>订单完成</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+        </ul>
+    </header>
+    <div class="ncc-wrapper wrapper">
+        <div class="ncc-main">
+            <div class="ncc-title">
+                <h3>我的购物车</h3>
+                <h5>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</h5>
+            </div>
+            <form action="https://www.nanshig.com/shop/index.php?act=buy&amp;op=buy_step1" method="POST" id="form_buy" name="form_buy">
+                <input type="hidden" value="1" name="ifcart">
+                <table class="ncc-table-style" nc_type="table_cart">
+                    <!-- <thead>
+                        <tr>
+                            <th class="w50"><label>
+                    <input type="checkbox" checked="" value="1" id="selectAll">
+                    全选</label></th>
+                            <th></th>
+                            <th>商品</th>
+                            <th class="w120">单价(元)</th>
+                            <th class="w120">数量</th>
+                            <th class="w120">小计(元)</th>
+                            <th class="w80">操作</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr>
+                            <th colspan="20"><strong>店铺：<a href="https://www.nanshig.com/shop/shop-47.html">潮男公社</a></strong> <span member_id="23245"></span>
+                            </th>
+                        </tr>
+                        <tr id="cart_item_35304" nc_group="35304" class="shop-list ">
+                            <td><input type="checkbox" checked="" nc_type="eachGoodsCheckBox" value="35304|1" id="cart_id35304" name="cart_id[]"></td>
+                            <td class="w60">
+                                <a href="https://www.nanshig.com/shop/item-227128.html" target="_blank" class="ncc-goods-thumb"><img src="https://www.nanshig.com/data/upload/shop/store/goods/47/47_06071097359425992_60.jpg" alt="2019春季新款小白鞋男鞋子韩版夏季板鞋男士百搭白鞋帆布休闲潮鞋 白色 36"></a>
+                            </td>
+                            <td class="tl">
+                                <dl class="ncc-goods-info">
+                                    <dt><a href="https://www.nanshig.com/shop/item-227128.html" target="_blank">2019春季新款小白鞋男鞋子韩版夏季板鞋男士百搭白鞋帆布休闲潮鞋 白色 36</a></dt>
+                                </dl>
+                            </td>
+                            <td class="w120"><em id="item35304_price">89.00</em></td>
+                            <td class="w120 ws0"><a href=" ### ;" title="减少商品件数" class="add-substract-key tip">-</a>
+                                <input id="input_item_35304" value="1" orig="1" changed="1" type="text" class="text w20">
+                                <a href=" ### ;" title="增加商品件数" class="add-substract-key tip">+</a></td>
+                            <td class="w120"> <em id="item35304_subtotal" nc_type="eachGoodsTotal">89.00</em>
+                            </td>
+                            <td class="w80"> <a href=" ### ">收藏</a><br>
+                                <a href=" ### ">删除</a></td>
+                        </tr>  
+                        <tr>
+                            <td class="tr" colspan="20">
+                                <div class="ncc-store-account">
+                                    <dl>
+                                        <dt>店铺合计：</dt>
+                                        <dd><em nc_type="eachStoreTotal">225.00</em>元</dd>
+                                    </dl>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody> 
+                    <tfoot>
+                        <tr>
+                            <td colspan="20">
+                                <div class="ncc-all-account">商品总价（不含运费）<em id="cartTotal">592.00</em>元</div>
+                            </td>
+                        </tr>
+                    </tfoot>-->
+                </table>
+            </form>
+            <div class="ncc-bottom"><a id="next_submit" href=" ### " class="ncc-btn ncc-btn-acidblue fr"><i class="icon-pencil"></i>下一步，填写核对购物信息</a></div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+
+    </footer>
+</body>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/mod.js"></script>
+<script src="js/cart.js"></script>
+<script>
+    new mod({
+        header: 0,
+        nav: 0,
+        map: 0,
+        fixbox: 0,
+    });
+    new crat_box();
+</script>
+
+</html>

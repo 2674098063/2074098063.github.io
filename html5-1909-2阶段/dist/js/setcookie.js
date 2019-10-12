@@ -1,0 +1,1 @@
+function getcookie(e){let t=document.cookie.split("; ");for(let o of t){let t=o.split("=");if(e==t[0])return t[1]}}function setcookie(e,t,o){let i=new Date;i.setDate(i.getDate()+o),document.cookie=e+"="+t+";expires="+i+";path=/"}function removecookie(e){setcookie(e,"",-1)}
